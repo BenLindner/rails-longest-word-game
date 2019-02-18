@@ -1,0 +1,35 @@
+<!-- <h1>GamesController#new</h1>
+<p>Find me in app/views/games_controller/new.html.erb</p> -->
+<h1>It's Fucking Game Time Fuckers!!!!</h1>
+
+<ul class="letters">
+  <% @letter_array.each do |letter| %>
+    <li><%= letter %></li>
+  <% end %>
+</ul>
+
+<p>Rules; there are no rules.</p>
+
+<form action="/score">
+  <input type="text" name="question_input" placeholder="'Sup shitbrick?">
+  <input type="submit" value="Hit Me!" class="btn btn-default">
+</form>
+<p>Oh - except that you have to submit the longest word you can find...</p>
+
+
+
+<!--
+
+<p class="form-prefix">What is the longest word you can find?</p>
+
+<form action="/score" method="POST" class="form-inline">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @letters %>
+  <div class="input-group input-group">
+    <input type="text" name="word" class="form-control">
+    <span class="input-group-btn">
+      <input type="submit" value="Play" >
+    </span>
+  </div>
+</form>
+ -->
